@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Yard To Nautical Mile</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Yard</label>
+            <input id="input" type="number" placeholder="Yard" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Nautical Mile: <span id="outputnm"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputnm").innerHTML = valNum / 2025;
+        }
+    </script>
+
+</body></html>
